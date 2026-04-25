@@ -4,7 +4,6 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
@@ -60,12 +59,5 @@ public class JwtPlugin {
                 .setClaims(claims)
                 .signWith(key)
                 .compact();
-    }
-
-    @PostConstruct
-    public void init() {
-        System.out.println("issuer: " + issuer);
-        System.out.println("secret: " + secret);
-        System.out.println("expiration: " + accessTokenExpirationHour);
     }
 }
