@@ -1,6 +1,6 @@
 package com.example.demo.domain.user.service;
 
-import com.example.demo.domain.user.common.Role;
+import com.example.demo.common.Role;
 import com.example.demo.domain.user.dto.request.SignInRequest;
 import com.example.demo.domain.user.dto.request.SignUpRequest;
 import com.example.demo.domain.user.dto.response.SignInResponse;

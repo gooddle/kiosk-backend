@@ -1,6 +1,6 @@
 package com.example.demo.domain.user.model;
 
-import com.example.demo.domain.user.common.Role;
+import com.example.demo.common.Role;
 import jakarta.persistence.*;
 import lombok.*;
 
